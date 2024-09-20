@@ -30,9 +30,9 @@ public class Main {
             if (dirCss.mkdir() && dirJs.mkdir()){
                 System.out.println("Success Create Directory CSS and JS");
             }
-            File originalHtml = new File("/home/johan/.template-hideng-gen/index.html");
-            File originalCss = new File("/home/johan/.template-hideng-gen/css/style.css");
-            File originalJs = new File("/home/johan/.template-hideng-gen/js/index.js");
+            File originalHtml = new File(home+"/.template-hideng-gen/index.html");
+            File originalCss = new File(home+"/.template-hideng-gen/css/style.css");
+            File originalJs = new File(home+"/.template-hideng-gen/js/index.js");
             Path copiedHtml = Paths.get(nameDir+"/index.html");
             Path originalPathHtml = originalHtml.toPath();
             Path copiedCss = Paths.get(dirCss.getPath()+"/style.css");
